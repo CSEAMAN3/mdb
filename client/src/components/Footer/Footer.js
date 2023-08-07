@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer>
-      <h3>qwertyuiop</h3>
+      <p>&#169; Book Keepers</p>
     </footer>
   );
 }

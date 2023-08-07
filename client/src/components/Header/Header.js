@@ -1,10 +1,22 @@
 import React from "react";
 import "./Header.css";
 
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header>
-      <h3>qwertyuiop</h3>
+      <h1>Book Keepers</h1>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

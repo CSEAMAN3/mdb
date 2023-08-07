@@ -4,7 +4,7 @@ import "./About.css";
 export default function About() {
   return (
     <main>
-      <h2>qwertyuiop</h2>
+      <h2>Learn All About Book Keepers</h2>
     </main>
   );
 }

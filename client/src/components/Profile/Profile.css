@@ -1,0 +1,9 @@
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.userInfo {
+  font-size: 0.725rem;
+  margin-left: 1rem;
+}

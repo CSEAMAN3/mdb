@@ -1,0 +1,27 @@
+.book-container {
+  margin-bottom: 1rem;
+  border: 2px solid darkkhaki;
+  border-radius: 4px;
+  padding: 1rem;
+  position: relative;
+}
+
+.book-title {
+  color: purple;
+}
+
+.avail {
+  color: darkgreen;
+}
+
+.unavail {
+  color: firebrick;
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

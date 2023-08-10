@@ -66,6 +66,17 @@ li {
 
 .log-btn {
   all: unset;
+  display: block;
+  padding: 1rem 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  .log-btn {
+    all: unset;
+  }
 }
 
 /*************
@@ -93,7 +104,7 @@ Layout
 .user-info {
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  left: 2rem;
 }
 
 /*************

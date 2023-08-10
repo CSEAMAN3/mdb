@@ -1,0 +1,22 @@
+.cara-container {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.cara-img {
+  width: 80vw;
+  height: 40vw;
+  object-fit: cover;
+}
+
+.caraUpBtn {
+  position: absolute;
+  left: 1rem;
+}
+
+.caraDownBtn {
+  position: absolute;
+  right: 1rem;
+}

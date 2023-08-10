@@ -4,6 +4,7 @@ import "./Header.css";
 import Login from "../Login/Login";
 import Logout from "../Logout/Logout";
 import Profile from "../Profile/Profile";
+import Burger from "../Burger/Burger";
 
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -15,6 +16,7 @@ export default function Header() {
     <header className="header-header">
       <div className="container header-container">
         <h1 className="header-heading bold">Book Keepers</h1>
+        <Burger />
         <nav className="header-nav">
           <ul className="header-nav-list">
             <li className="header-nav-listItem">
@@ -37,7 +39,7 @@ export default function Header() {
                 <Logout />
               </li>
             )}
-            {user && user.email === "chris.seaman@techeducators.co.uk" && (
+            {user && user.email === process.env.REACT_APP_EMAIL && (
               <li>
                 <Link className="" to="/admin">
                   admin

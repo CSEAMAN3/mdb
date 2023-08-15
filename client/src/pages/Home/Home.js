@@ -14,7 +14,7 @@ export default function Home() {
 
   async function getBooks() {
     try {
-      const API = "http://localhost:8070/books";
+      const API = "https://mdb-l07m.onrender.com/books";
       const res = await axios.get(API);
       console.log(res.data);
       setBooks(res.data);
@@ -27,7 +27,7 @@ export default function Home() {
     try {
       const check = window.confirm(`Are you sure you want to delete ${title}?`);
       if (check) {
-        const API = `http://localhost:8070/books/${id}`;
+        const API = `https://mdb-l07m.onrender.com/books/${id}`;
         await axios.delete(API);
         getBooks();
       } else {

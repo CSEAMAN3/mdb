@@ -13,7 +13,7 @@ export default function BookDetails() {
   const [book, setBook] = useState({});
 
   async function getBook() {
-    const API = `http://localhost:8070/books?_id=${id}`;
+    const API = `https://mdb-l07m.onrender.com/books?_id=${id}`;
     const res = await axios.get(API);
     console.log(res.data);
     setBook(res.data[0]);
